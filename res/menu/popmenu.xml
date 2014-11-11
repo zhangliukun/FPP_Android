@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/solved" 
+        android:title="已解决" 
+        android:orderInCategory="1">
+    </item>
+    
+    <item android:id="@+id/unsolved" 
+        android:title="未解决" 
+        android:orderInCategory="2">       
+    </item>
+    
+
+</menu>

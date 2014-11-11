@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="67px"
+        android:layout_height="67px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cadetblue"
+        android:src="@drawable/icon_important" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@color/darkgray"    
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp" >
+
+        <!-- 
+        <LinearLayout
+            android:layout_width="138dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="故障编号:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/title_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="3dp"
+                android:text="故障编号"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16px" />
+
+        </LinearLayout>
+         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="故障ID:"
+                android:textSize="14px" />
+
+            <TextView
+                android:id="@+id/content_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="故障ID"
+                android:textSize="14px" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="138dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="故障模块:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/content_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingLeft="3dp"
+                android:text="故障模块"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="故障时间:"
+                android:textSize="14px" />
+
+            <TextView
+                android:id="@+id/content_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故障时间"
+                android:textColor="@color/black"
+                android:textSize="14px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67px"
+        android:layout_height="67px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cadetblue"
+        />
+
+</RelativeLayout>

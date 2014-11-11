@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="基本设置">
+        <EditTextPreference android:dialogMessage="请输入标准的ipv4地址,如:192.168.135.77" android:title="服务器IP设置" android:dialogTitle="服务器IP" android:key="SERVER_IP"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="个人喜好设置">
+        <SwitchPreference android:title="是否自动刷新" android:selectable="true" android:enabled="true"/>
+        <MultiSelectListPreference android:title="自动刷新间隔" android:enabled="true" android:selectable="true" android:entryValues="@array/times" android:entries="@array/times"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

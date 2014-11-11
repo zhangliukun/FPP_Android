@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zale"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="1.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.zale.activity.StartActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zale.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.zale.activity.CommuniteActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask" >
+        </activity>
+       
+        
+        <activity
+            android:name="com.zale.activity.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.zale.activity.ProblemListActivity"
+            android:label="@string/title_activity_problem_communite"
+            android:theme="@style/titlebarstyle"
+            android:launchMode="singleTop" >
+        </activity>
+
+         <service android:name="com.zale.service.background_service" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Test for my app"
+        android:targetPackage="zale.fpp_android" />
+
+</manifest>
+

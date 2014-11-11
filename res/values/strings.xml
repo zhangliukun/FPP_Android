@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小区安防助手</string>
+    <string name="detail">盛世华安\n智慧城市物联网\n防攀爬系统</string>
+    <string name="action_settings">设置服务器IP</string>
+    <string name="writer">Zale</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_main">已订阅小区列表</string>
+    <string name="title_activity_communite">小区列表</string>
+    <string name="title_activity_problem_communite">小区</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Click to refresh...</string>
+    <string name="title_activity_details">具体问题信息</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search">查找</string>
+    <string name="refresh">更新数据库信息</string>
+    <string name="exit">退出</string>
+
+    <string-array name="times">
+        <item>10min</item>
+        <item>15min</item>
+        <item>20min</item>
+    </string-array>
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
