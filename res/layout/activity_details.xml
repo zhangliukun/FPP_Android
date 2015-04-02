@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/namcard_picker_bkg_hover"
+    android:background="#5c7285"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -16,7 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:gravity="center_vertical|center_horizontal|center"
+        android:gravity="center_horizontal"
         android:text="模块故障具体信息"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/mintcream" />
@@ -29,16 +29,11 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="50dp"
-        android:gravity="center_horizontal"
+        android:gravity="left|center_horizontal"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/mintcream" />
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-    </LinearLayout>
 
     <Button
         android:id="@+id/back_BTN"

@@ -77,7 +77,6 @@ public class StartActivity extends Activity {
 //							"你的手机没有获得查看授权!!!", 
 //							Toast.LENGTH_LONG).show();
 					
-					
 					dialog();
 
 					try {
@@ -156,7 +155,7 @@ public class StartActivity extends Activity {
 		SharedData.helper = helper;
 		new SharedData();
 		
-		startActivityIntent = new Intent(getApplicationContext(),MainActivity.class);
+		startActivityIntent = new Intent(getApplicationContext(),LoginActivity.class);
 		startServiceIntent = new Intent(getApplicationContext(),background_service.class);
 
 		getReadyThread.start();

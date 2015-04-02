@@ -43,12 +43,20 @@
         <activity
             android:name="com.zale.activity.DetailsActivity"
             android:label="@string/title_activity_details"
+            android:theme="@style/titlebarstyle"
             android:launchMode="singleTask" >
         </activity>
         
         <activity
             android:name="com.zale.activity.ProblemListActivity"
             android:label="@string/title_activity_problem_communite"
+            android:theme="@style/titlebarstyle"
+            android:launchMode="singleTop" >
+        </activity>
+        
+        <activity
+            android:name="com.zale.activity.LoginActivity"
+            android:label="@string/title_activity_login"
             android:theme="@style/titlebarstyle"
             android:launchMode="singleTop" >
         </activity>
