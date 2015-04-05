@@ -10,10 +10,9 @@
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="28.0dip"
-        android:layout_marginRight="28.0dip"
-        android:layout_marginTop="10.0dip"
-        android:background="@drawable/login_pic3" />
+		android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dip"
+        android:background="@drawable/login_pic4" />
 
     <LinearLayout
         android:id="@+id/input"
@@ -22,23 +21,37 @@
         android:layout_below="@id/image"
         android:layout_marginLeft="28.0dip"
         android:layout_marginRight="28.0dip"
-        android:background="@drawable/login_input"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/imei"
+        <LinearLayout
+            android:id="@+id/show_imei_view"
             android:layout_width="fill_parent"
-            android:layout_height="44.0dip"
-            android:background="#00ffffff"
-            android:hint="@string/account"
-            android:inputType="number"
-            android:maxLength="16"
-            android:maxLines="1"
-            android:paddingLeft="12.0dip"
-            android:textColor="#ff1d1d1d"
-            android:textColorHint="#ff666666"
-            android:gravity="center"
-            android:textSize="16.0sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/imei_label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="唯一码"
+                android:textColor="@color/white"
+                android:textColorHint="#ff666666"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/imei"
+                android:layout_width="0dp"
+                android:layout_height="44.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/account"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
 
         <View
             android:layout_width="fill_parent"
@@ -47,20 +60,36 @@
             android:layout_marginRight="1.0px"
             android:background="#ffc0c3c4" />
 
-        <EditText
-            android:id="@+id/edit_phoneNum"
+        <LinearLayout
+            android:id="@+id/edit_phone_view"
             android:layout_width="fill_parent"
-            android:layout_height="44.0dip"
-            android:background="#00ffffff"
-            android:gravity="center_vertical"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:maxLength="16"
-            android:maxLines="1"
-            android:paddingLeft="12.0dip"
-            android:textColor="#ff1d1d1d"
-            android:textColorHint="#ff666666"
-            android:textSize="16.0sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/white"
+                android:textColorHint="#ff666666"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/edit_phoneNum"
+                android:layout_width="0dp"
+                android:layout_height="44.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/login_input"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="#ff1d1d1d"
+                android:textColorHint="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
     </LinearLayout>
 
     <Button
@@ -78,6 +107,13 @@
         android:textColor="#ff333333"
         android:textSize="18.0sp" />
 
-    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/developer" />
 
 </RelativeLayout>
